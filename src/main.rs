@@ -8,7 +8,7 @@ fn main() {
 
     let secret_number = rand::thread_rng().gen_range(1..101);
 
-    another_function();
+    another_function(5);
 
     loop {
         println!("Please input your guess.");
@@ -37,7 +37,7 @@ fn main() {
     }
 }
 
-fn another_function() {
-    println!("Another function.");
+fn another_function(x: i32) {
+    println!("The value of x is: {}", x);
 }
 
