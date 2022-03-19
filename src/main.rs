@@ -8,6 +8,8 @@ fn main() {
 
     let secret_number = rand::thread_rng().gen_range(1..101);
 
+    another_function();
+
     loop {
         println!("Please input your guess.");
 
@@ -34,3 +36,8 @@ fn main() {
         }
     }
 }
+
+fn another_function() {
+    println!("Another function.");
+}
+
